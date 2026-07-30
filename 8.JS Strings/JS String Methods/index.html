@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Strings</h1>
+<p>Property access on strings are read only.</p>
+
+<p id="demo"></p>
+
+<script>
+let text = "HELLO WORLD";
+
+// Try to change the first letter to "A"
+try {
+  text[0] = "A";
+} catch(err) {
+  text = err.message
+}     
+
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>
