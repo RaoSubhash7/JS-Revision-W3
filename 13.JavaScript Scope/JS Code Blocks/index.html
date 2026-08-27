@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Block Scope</h1>
+
+<p id="demo"></p>
+
+<script>
+{
+  let x = 10;
+  // x is accessible here
+}
+
+// x is not accessible here
+document.getElementById("demo").innerHTML = "x is " + typeof x;
+</script>
+
+</body>
+</html>
