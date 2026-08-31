@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Block Scope</h1>
+
+<p id="demo"></p>
+
+<script>
+if (true) {
+  var firstName = "John";
+  let lastName = "Doe";
+}
+
+let text1 = text2 = "unknown";
+
+if (typeof firstName !== "undefined") text1 = firstName;
+if (typeof lastName !== "undefined") text2 = lastName;
+
+document.getElementById("demo").innerHTML =
+"First Name: " +  text1 + "<br><br>" +
+"Last Name: " + text2;
+</script>
+
+</body>
+</html>
+
