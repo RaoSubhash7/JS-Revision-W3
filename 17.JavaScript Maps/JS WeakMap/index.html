@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript WeakMap</h1>
+<h2>The set() Method</h2>
+
+<p id="demo"></p>
+
+<script>
+// Create a WeakMap
+let myMap = new WeakMap();
+
+// Create an Object
+let myObj = {fname:"John", lname:"Doe"};
+
+// Set a WeakMap value
+myMap.set(myObj, "player");
+
+// Get the WeakMap value
+let type = myMap.get(myObj);
+document.getElementById("demo").innerHTML = "He is a " + type;
+</script>
+
+</body>
+</html>
+    
